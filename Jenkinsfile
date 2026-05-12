@@ -1,9 +1,9 @@
 pipeline {
-    agent {lable 'AGENT 1'}
+    agent {label 'AGENT 1'}
     stages {
         stage('Build'){
             steps {
-                scripts{
+                script{
                 sh '''
                     echo "Hello this is Build"
                  '''
@@ -12,7 +12,7 @@ pipeline {
         }
              stage('Test'){
             steps {
-                scripts{
+                script{
                 sh '''
                     echo "Hello this is Test"
                  '''
@@ -21,7 +21,7 @@ pipeline {
         }
              stage('Deploy'){
             steps {
-                scripts{
+                script{
                 sh '''
                     echo "Hello this is Deploy"
                  '''
