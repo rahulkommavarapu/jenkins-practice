@@ -23,8 +23,7 @@ pipeline {
         stage('Build'){
             steps {
                 script{
-                sh " " "
-
+                sh """
                 echo "Hello ${params.PERSON}"
 
                 echo "Biography: ${params.BIOGRAPHY}"
@@ -34,8 +33,7 @@ pipeline {
                 echo "Choice: ${params.CHOICE}"
 
                 echo "Password: ${params.PASSWORD}"
-
-                 " " "
+                 """
                 }
             }
         }
