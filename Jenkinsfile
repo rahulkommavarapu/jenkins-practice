@@ -2,7 +2,7 @@ pipeline {
     agent {label 'AGENT'}
     environment {
         PROJECT = 'EXPENSE'
-        COMPONENT = 'backend'
+        COMPONENT = 'BACKEND'
     }
     options {
         disableConcurrentBuilds()
