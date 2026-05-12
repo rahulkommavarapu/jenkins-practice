@@ -1,5 +1,12 @@
 pipeline {
     agent {label 'AGENT'}
+    environment {
+        PROJECT = 'EXPENSE'
+        COMPONENT = 'BACKEND'
+    }
+    options {
+        disableConcurrentBuilds()
+    }
     stages {
         stage('Build'){
             steps {
